@@ -1,0 +1,358 @@
+#content{
+    max-width: 100%;
+    font-family: 'lato', sans-serif;
+}
+
+h1, h2, p{
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+}
+
+
+
+/*Header 1*/
+header{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    max-width: 100%;
+    background-color: #FFFFFF;
+}
+
+.sprak{
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    margin-left: 1%;
+}
+
+.sprak img{
+    width: 35px;
+    height: 25px;
+    opacity: 0.9;
+}
+
+.kundvagn {
+    margin-right:2%;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+}
+
+.kundvagn img{
+    width: 35px;
+    height: 25px;
+    opacity: 0.6;
+}
+
+
+
+/*Header 2*/
+.header{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    align-items: flex-start;
+    max-width: 100%;
+    background-color: #FFFFFF;
+
+}
+
+.headerbild{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+
+}
+
+.headerbild img{
+    max-width: 100%;
+
+}
+
+
+/*Breadcrums*/
+.bread ul a:hover{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    list-style: none;
+    color: #152D4D;
+}
+
+.bread ul li {
+    flex: 0 0 auto;
+    color: #152d4d;
+    list-style-type: none;
+    display: inline;
+}
+
+
+/*Nav, dropdown meny*/
+nav{
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    width: 100%;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+
+    background: #152d4d;
+    background: -moz-linear-gradient(top, #152d4d, #013953);
+    background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#152d4d), to(#013953));
+
+    /* Borders#0272a7, #013953 */
+
+    border: 1px solid #002232;
+
+    -moz-box-shadow:inset 0px 0px 1px #edf9ff;
+    -webkit-box-shadow:inset 0px 0px 1px #edf9ff;
+    box-shadow:inset 0px 0px 1px #edf9ff;
+
+}
+
+nav ul {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    margin-right: 10%;
+}
+
+nav li a {
+    display: inline-block;
+    color: white;
+    align-content: center;
+    margin: 5% 0;
+    text-decoration: none;
+}
+
+nav li a:hover, .dropdown:hover {
+    background-color: #014463;
+    -moz-border-radius: 5px 5px 0px 0px;
+    -webkit-border-radius: 5px 5px 0px 0px;
+    border-radius: 5px 5px 0px 0px;
+}
+
+li.dropdown {
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    justify-content: center;
+    background-color: white;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 10% 5%;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {
+    background-color: #014463;
+    color: white;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.sok{
+    width: 130px;
+    -webkit-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out;
+}
+
+
+
+/*Main*/
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #FFFFFF;
+}
+
+
+/*Bildserie med bästsäljare*/
+.bilder{
+    margin-bottom: 20px;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    align-items: flex-start;
+
+}
+
+.bilder img{
+    width:200px;
+    height: 250px;
+}
+
+
+/*Informationsruta*/
+.info{
+    opacity: 0.70;
+    filter: alpha(opacity=77);
+    margin: 5% 10%;
+
+    flex-direction: row;
+    color: white;
+    max-width: 100%;
+    align-items: center;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+
+    background: #152d4d;
+    background: -moz-linear-gradient(top, #152d4d, #013953);
+    background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#152d4d), to(#013953));
+
+    /* Borders#0272a7, #013953 */
+
+    border: 1px solid #002232;
+
+    -moz-box-shadow:inset 0px 0px 1px #edf9ff;
+    -webkit-box-shadow:inset 0px 0px 1px #edf9ff;
+    box-shadow:inset 0px 0px 1px #edf9ff;
+
+}
+
+.info p{
+    align-items: center;
+
+}
+
+
+/*Bildspel*/
+.bildspel{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-right: 30%;
+    margin-bottom: 500px;
+}
+
+#slides {
+    list-style-type: none;
+}
+
+.slide {
+    position: absolute;
+
+    opacity: 0;
+    z-index: 1;
+}
+
+.showing {
+    opacity: 1;
+    z-index: 2;
+}
+
+.slide {
+    box-sizing: border-box;
+    color: #fff;
+}
+
+
+/*Inspirationsbilder*/
+.inspo{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+
+.inspo img{
+    width: 170px;
+    height: 110px;
+    border-style: ridge;
+}
+
+
+/*footer*/
+footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: flex-start;
+    align-content: flex-start;
+    background-color: #FFFFFF;
+    border-top: solid;
+    border-bottom: solid;
+}
+
+.betalmedel{
+    flex-direction: column;
+    justify-content: space-around;
+    margin: 2% 0;
+}
+
+.betalmedel img {
+    height: 30px;
+    width: 114px;
+    margin-bottom: 5%;
+}
+
+.betalmedel .trygg_ehandel img{
+    height: 40px;
+    width: 40px;
+}
+
+.frakt{
+    flex-direction: column;
+    justify-content: space-around;
+    margin: 1% 0;
+}
+
+.frakt img {
+    height: 40px;
+    width: 114px;
+}
+
+.valgorenhet{
+    flex-flow: column nowrap;
+    justify-content: space-around;
+    margin: 2% 0;
+}
+
+.valgorenhet img {
+    height: 30px;
+    width: 114px;
+    margin-bottom: 5%;
+}
+
+.kontakt{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin: 2% 0;
+}
+
+
+
+
+/*SnÃ¶filngor*/
+#snowflakeContainer {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+}
+
+.snowflake {
+    padding-left: 15px;
+    font-family: Cambria, Georgia, serif;
+    font-size: 14px;
+    line-height: 24px;
+    position: fixed;
+    color: lightblue;
+    z-index: 1000;
+}
+
+.snowflake:hover {
+    cursor: default;
+}
+
